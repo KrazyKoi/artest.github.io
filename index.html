@@ -54,23 +54,22 @@
     <a-nft
       type="nft"
       url="https://raw.githack.com/KrazyKoi/artest.github.io/refs/heads/main/gurttesting/gurttesting"
+      id="gurt"
       smooth="true"
       smoothCount="10"
       smoothTolerance=".01"
       smoothThreshold="5"
     >
-      <a-image
-        src="https://raw.githubusercontent.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex-image-big.jpeg"
-        scale="1000 1000 1000"
-        position="150 300 -100"
-        rotation="-90 0 0"
-      >
-      </a-image>
     </a-nft>
+    <script>
+      document.querySelector('#gurt').addEventListener('markerFound', () => {
+      window.location.href = 'https://alexs-mobs-unofficial.fandom.com/wiki/Ambergris';});
+    </script>
     <a-entity camera></a-entity>
   </a-scene>
 
 </body>
+
 
 
 
